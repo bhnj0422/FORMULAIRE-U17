@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournoi Lomé Ligue Cup U17 - Inscription</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Inclure votre fichier CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Avant+Garde+Gothic&family=Century+Gothic&display=swap');
+
+        body {
+            font-family: 'Century Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: 'ITC Avant Garde Gothic', sans-serif;
+            color: #000;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #b30000;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #b30000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #940000;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #b30000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #940000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription au Tournoi de Football</h1>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="team_name">Nom de l'équipe</label>
+                <input type="text" id="team_name" name="team_name" required>
+            </div>
+            <div class="form-group">
+                <label for="team_manager">Nom du responsable</label>
+                <input type="text" id="team_manager" name="team_manager" required>
+            </div>
+            <div class="form-group">
+                <label for="contact_number">Numéro de contact
+                </label>
+                <input type="text" id="contact_number" name="contact_number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="team_members">Nombre de joueurs</label>
+                <input type="number" id="team_members" name="team_members" required>
+            </div>
+            <div class="form-group">
+                <label for="registration_fee">Frais d'inscription (20 000 francs CFA)</label>
+                <select id="registration_fee" name="registration_fee" required>
+                    <option value="paid">Payé</option>
+                    <option value="unpaid">Non payé</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">S'inscrire</button>
+            </div>
+        </form>
+        <a href="index.html">Retour à l'accueil</a>
+    </div>
+</body>
+</html>
+```

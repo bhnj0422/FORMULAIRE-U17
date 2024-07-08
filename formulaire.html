@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+</head>
+<body>
+    <h1>Formulaire d'Inscription</h1>
+    <form action="submit_form.php" method="post">
+        <label for="nom_equipe">Nom de l'équipe:</label><br>
+        <input type="text" id="nom_equipe" name="nom_equipe" required><br><br>
+        
+        <label for="nom_responsable">Nom du responsable:</label><br>
+        <input type="text" id="nom_responsable" name="nom_responsable" required><br><br>
+        
+        <label for="numero_contact">Numéro de contact:</label><br>
+        <input type="text" id="numero_contact" name="numero_contact" required><br><br>
+        
+        <label for="adresse_mail">Adresse mail:</label><br>
+        <input type="email" id="adresse_mail" name="adresse_mail" required><br><br>
+        
+        <input type="submit" value="Inscrire">
+    </form>
+</body>
+</html>

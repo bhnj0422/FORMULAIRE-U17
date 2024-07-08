@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournoi Lomé Ligue Cup U17 - Accueil</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Inclure votre fichier CSS -->
+    <style>
+        body {
+            font-family: 'Century Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 100vh;
+            background: url('images/votre-image2.jpg') center/cover no-repeat; /* Image d'arrière-plan */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Superposition semi-transparente */
+            z-index: 1; /* S'assurer que l'overlay est au-dessus de l'image */
+        }
+        .header .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'ITC Avant Garde Gothic', sans-serif;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 2; /* S'assurer que le texte est au-dessus de l'overlay */
+        }
+        .header .text h1 {
+            margin: 0;
+        }
+        .header .text a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #b30000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .header .text a:hover {
+            background-color: hsl(0, 95%, 34%);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="overlay"></div> <!-- Superposition ajoutée -->
+        <div class="text">
+            <h1>Bienvenue sur le site officiel du Tournoi Lomé Ligue Cup U17</h1>
+            <a href="inscription.html">Inscrivez-vous maintenant</a>
+            <br>
+            <a href="objectifs.html">Découvrez nos objectifs</a>
+        </div>
+    </div>
+</body>
+</html>
